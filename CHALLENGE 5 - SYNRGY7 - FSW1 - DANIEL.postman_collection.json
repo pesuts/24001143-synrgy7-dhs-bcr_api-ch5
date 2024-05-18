@@ -1,0 +1,1512 @@
+{
+	"info": {
+		"_postman_id": "d42018bc-eedc-4f25-80f6-f358557e817c",
+		"name": "CHALLENGE 5 - SYNRGY7 - FSW1 - DANIEL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25932120",
+		"_collection_link": "https://universal-meteor-321838.postman.co/workspace/79c2f029-0a21-449b-8e87-32a380924d57/collection/25932120-d42018bc-eedc-4f25-80f6-f358557e817c?action=share&source=collection_link&creator=25932120"
+	},
+	"item": [
+		{
+			"name": "Get Cars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/cars",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"cars"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Cars",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/cars",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"cars"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4015"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"faf-px0zChdr0t7GVr9QPVSDOm+FUtc\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 18 May 2024 13:43:47 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Success\",\n    \"data\": [\n        {\n            \"id\": 10,\n            \"model\": \"Edit Model\",\n            \"manufacture\": \"Edit Manufacture\",\n            \"plate\": \"Edit Plate\",\n            \"image_url\": \"/uploads/TNnFg0NRXFCbS7WG.jpg\",\n            \"price\": 69,\n            \"category\": \"Edit Category\",\n            \"created_at\": \"2024-05-03T13:17:59.835Z\",\n            \"updated_at\": \"2024-05-18T13:33:57.184Z\",\n            \"orders\": [\n                {\n                    \"id\": 4,\n                    \"customer_id\": 2,\n                    \"car_id\": 10,\n                    \"price\": 35000,\n                    \"created_at\": \"2024-04-23T13:17:59.848Z\",\n                    \"start_rent\": \"2024-04-28T13:17:59.848Z\",\n                    \"finish_rent\": \"2024-06-07T13:17:59.848Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 1,\n            \"model\": \"Edit Model\",\n            \"manufacture\": \"Edit Manufacture\",\n            \"plate\": \"Edit Plate\",\n            \"image_url\": \"/uploads/mlegqiVJ3BspdvhI.jpg\",\n            \"price\": 69,\n            \"category\": \"Edit Category\",\n            \"created_at\": \"2024-05-18T13:17:59.835Z\",\n            \"updated_at\": \"2024-05-18T13:36:30.774Z\",\n            \"orders\": [\n                {\n                    \"id\": 3,\n                    \"customer_id\": 3,\n                    \"car_id\": 1,\n                    \"price\": 28000,\n                    \"created_at\": \"2024-04-28T13:17:59.848Z\",\n                    \"start_rent\": \"2024-05-03T13:17:59.848Z\",\n                    \"finish_rent\": \"2024-06-02T13:17:59.848Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 2,\n            \"model\": \"Edit Model\",\n            \"manufacture\": \"Edit Manufacture\",\n            \"plate\": \"Edit Plate\",\n            \"image_url\": \"/uploads/bczRUoB-y1mTTVzu.jpg\",\n            \"price\": 69,\n            \"category\": \"Edit Category\",\n            \"created_at\": \"2024-05-18T13:17:59.835Z\",\n            \"updated_at\": \"2024-05-18T13:37:09.083Z\",\n            \"orders\": [\n                {\n                    \"id\": 1,\n                    \"customer_id\": 1,\n                    \"car_id\": 2,\n                    \"price\": 30000,\n                    \"created_at\": \"2024-05-08T13:17:59.848Z\",\n                    \"start_rent\": \"2024-05-13T13:17:59.848Z\",\n                    \"finish_rent\": \"2024-05-23T13:17:59.848Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 101,\n            \"model\": \"New Model\",\n            \"manufacture\": \"New Manufacture\",\n            \"plate\": \"New Plate\",\n            \"image_url\": \"/uploads/fkd_L-Yo3s4ZKHRN.jpg\",\n            \"price\": 888,\n            \"category\": \"New Category\",\n            \"created_at\": \"2024-05-18T13:40:07.872Z\",\n            \"updated_at\": \"2024-05-18T13:40:07.872Z\",\n            \"orders\": []\n        },\n        {\n            \"id\": 3,\n            \"model\": \"Ford Mustang\",\n            \"manufacture\": \"Ford\",\n            \"plate\": \"GHI789\",\n            \"image_url\": \"https://example.com/ford_mustang.jpg\",\n            \"price\": 40000,\n            \"category\": \"Sports Car\",\n            \"created_at\": \"2024-05-18T13:17:59.835Z\",\n            \"updated_at\": \"2024-05-18T13:17:59.835Z\",\n            \"orders\": [\n                {\n                    \"id\": 2,\n                    \"customer_id\": 6,\n                    \"car_id\": 3,\n                    \"price\": 25000,\n                    \"created_at\": \"2024-05-03T13:17:59.848Z\",\n                    \"start_rent\": \"2024-05-08T13:17:59.848Z\",\n                    \"finish_rent\": \"2024-05-28T13:17:59.848Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 4,\n            \"model\": \"Nissan Altima\",\n            \"manufacture\": \"Nissan\",\n            \"plate\": \"JKL012\",\n            \"image_url\": \"https://example.com/nissan_altima.jpg\",\n            \"price\": 28000,\n            \"category\": \"Sedan\",\n            \"created_at\": \"2024-05-18T13:17:59.835Z\",\n            \"updated_at\": \"2024-05-18T13:17:59.835Z\",\n            \"orders\": [\n                {\n                    \"id\": 5,\n                    \"customer_id\": 5,\n                    \"car_id\": 4,\n                    \"price\": 40000,\n                    \"created_at\": \"2024-04-18T13:17:59.848Z\",\n                    \"start_rent\": \"2024-04-23T13:17:59.848Z\",\n                    \"finish_rent\": \"2024-06-12T13:17:59.848Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 5,\n            \"model\": \"Chevrolet Silverado\",\n            \"manufacture\": \"Chevrolet\",\n            \"plate\": \"MNO345\",\n            \"image_url\": \"https://example.com/chevrolet_silverado.jpg\",\n            \"price\": 35000,\n            \"category\": \"Truck\",\n            \"created_at\": \"2024-05-18T13:17:59.835Z\",\n            \"updated_at\": \"2024-05-18T13:17:59.835Z\",\n            \"orders\": []\n        },\n        {\n            \"id\": 6,\n            \"model\": \"BMW 3 Series\",\n            \"manufacture\": \"BMW\",\n            \"plate\": \"PQR678\",\n            \"image_url\": \"https://example.com/bmw_3_series.jpg\",\n            \"price\": 45000,\n            \"category\": \"Luxury Sedan\",\n            \"created_at\": \"2024-05-18T13:17:59.835Z\",\n            \"updated_at\": \"2024-05-18T13:17:59.835Z\",\n            \"orders\": [\n                {\n                    \"id\": 7,\n                    \"customer_id\": 7,\n                    \"car_id\": 6,\n                    \"price\": 50000,\n                    \"created_at\": \"2024-04-08T13:17:59.848Z\",\n                    \"start_rent\": \"2024-04-13T13:17:59.848Z\",\n                    \"finish_rent\": \"2024-06-22T13:17:59.848Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 7,\n            \"model\": \"Tesla Model S\",\n            \"manufacture\": \"Tesla\",\n            \"plate\": \"STU901\",\n            \"image_url\": \"https://example.com/tesla_model_s.jpg\",\n            \"price\": 60000,\n            \"category\": \"Electric Car\",\n            \"created_at\": \"2024-04-18T13:17:59.835Z\",\n            \"updated_at\": \"2024-04-23T13:17:59.835Z\",\n            \"orders\": [\n                {\n                    \"id\": 6,\n                    \"customer_id\": 4,\n                    \"car_id\": 7,\n                    \"price\": 45000,\n                    \"created_at\": \"2024-04-13T13:17:59.848Z\",\n                    \"start_rent\": \"2024-04-18T13:17:59.848Z\",\n                    \"finish_rent\": \"2024-06-17T13:17:59.848Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 8,\n            \"model\": \"Jeep Wrangler\",\n            \"manufacture\": \"Jeep\",\n            \"plate\": \"VWX234\",\n            \"image_url\": \"https://example.com/jeep_wrangler.jpg\",\n            \"price\": 32000,\n            \"category\": \"SUV\",\n            \"created_at\": \"2024-04-28T13:17:59.835Z\",\n            \"updated_at\": \"2024-05-13T13:17:59.835Z\",\n            \"orders\": []\n        },\n        {\n            \"id\": 9,\n            \"model\": \"Audi A4\",\n            \"manufacture\": \"Audi\",\n            \"plate\": \"YZA567\",\n            \"image_url\": \"https://example.com/audi_a4.jpg\",\n            \"price\": 48000,\n            \"category\": \"Luxury Sedan\",\n            \"created_at\": \"2024-05-08T13:17:59.835Z\",\n            \"updated_at\": \"2024-05-13T13:17:59.835Z\",\n            \"orders\": []\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Car By Id With Not Valid Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/cars/abc",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"cars",
+						"abc"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Car By Id With Not Valid Id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/cars/abc",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"cars",
+								"abc"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "44"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2c-OhXsJ7tzHDFpsJy5bXPqiPlpzoQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 18 May 2024 13:43:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"Id not valid!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Car By Id With Not Found Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/cars/99999",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"cars",
+						"99999"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Car By Id With Not Found Data",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/cars/99999",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"cars",
+								"99999"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2e-xwbXOoJVVY7dNq2wP0SsMBrcMb8\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 18 May 2024 13:44:09 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Error\",\n    \"message\": \"Data not found!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Car By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/cars/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"cars",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Car By Id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/cars/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"cars",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "457"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1c9-5KfAS7t7RqhswLsJS/HGKEhBZKY\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 18 May 2024 13:44:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Success\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"model\": \"Edit Model\",\n            \"manufacture\": \"Edit Manufacture\",\n            \"plate\": \"Edit Plate\",\n            \"image_url\": \"/uploads/mlegqiVJ3BspdvhI.jpg\",\n            \"price\": 69,\n            \"category\": \"Edit Category\",\n            \"created_at\": \"2024-05-18T13:17:59.835Z\",\n            \"updated_at\": \"2024-05-18T13:36:30.774Z\",\n            \"orders\": [\n                {\n                    \"id\": 3,\n                    \"customer_id\": 3,\n                    \"car_id\": 1,\n                    \"price\": 28000,\n                    \"created_at\": \"2024-04-28T13:17:59.848Z\",\n                    \"start_rent\": \"2024-05-03T13:17:59.848Z\",\n                    \"finish_rent\": \"2024-06-02T13:17:59.848Z\"\n                }\n            ]\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Add Car (With Upload)",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"var current_date = new Date();\r",
+							"pm.environment.set(\"current_date\", current_date);"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "model",
+							"value": "New Model",
+							"type": "text"
+						},
+						{
+							"key": "manufacture",
+							"value": "New Manufacture",
+							"type": "text"
+						},
+						{
+							"key": "plate",
+							"value": "New Plate",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "888",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "New Category",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/danie/OneDrive/Desktop/0617fe7ad089d48a66c7a8a0f4644cd6ee06087ba29a5a0b14a6b18cfb8842e3_1.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/cars",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"cars"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Add Car (With Upload)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "model",
+									"value": "New Model",
+									"type": "text"
+								},
+								{
+									"key": "manufacture",
+									"value": "New Manufacture",
+									"type": "text"
+								},
+								{
+									"key": "plate",
+									"value": "New Plate",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "888",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "New Category",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/danie/OneDrive/Desktop/0617fe7ad089d48a66c7a8a0f4644cd6ee06087ba29a5a0b14a6b18cfb8842e3_1.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/cars",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"cars"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "308"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"134-vtdKAv7AJtHWdmECmhnqwJNb18k\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 18 May 2024 13:44:38 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Success\",\n    \"message\": \"Data sucesfully added\",\n    \"data\": {\n        \"model\": \"New Model\",\n        \"manufacture\": \"New Manufacture\",\n        \"plate\": \"New Plate\",\n        \"image_url\": \"/uploads/vbX_VMqJ5tiPijB8.jpg\",\n        \"price\": \"888\",\n        \"category\": \"New Category\",\n        \"created_at\": \"2024-05-18T13:44:38.307Z\",\n        \"updated_at\": \"2024-05-18T13:44:38.307Z\",\n        \"id\": 102\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Add Car (With Upload) Not Image File",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"var current_date = new Date();\r",
+							"pm.environment.set(\"current_date\", current_date);"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "model",
+							"value": "Model",
+							"type": "text"
+						},
+						{
+							"key": "manufacture",
+							"value": "Manufacture",
+							"type": "text"
+						},
+						{
+							"key": "plate",
+							"value": "Plate",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "888",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "Category",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/danie/OneDrive/Desktop/customers.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/cars",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"cars"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Add Car (With Upload) Not Image File",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "model",
+									"value": "Model",
+									"type": "text"
+								},
+								{
+									"key": "manufacture",
+									"value": "Manufacture",
+									"type": "text"
+								},
+								{
+									"key": "plate",
+									"value": "Plate",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "888",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "Category",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/danie/OneDrive/Desktop/customers.csv"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/cars",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"cars"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "54"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"36-tRowYI7sGUOXcDdlFG3xVaR4RkY\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 18 May 2024 13:45:12 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"File must be a picture!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Edit Car Id Not Valid",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"var current_date = new Date();\r",
+							"pm.environment.set(\"current_date\", current_date);"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "model",
+							"value": "Edit Model",
+							"type": "text"
+						},
+						{
+							"key": "manufacture",
+							"value": "Edit Manufacture",
+							"type": "text"
+						},
+						{
+							"key": "plate",
+							"value": "Edit Plate",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "69",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "Edit Category",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/danie/OneDrive/Desktop/customers.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/cars/abc",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"cars",
+						"abc"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Edit Car Id Not Valid",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "model",
+									"value": "Edit Model",
+									"type": "text"
+								},
+								{
+									"key": "manufacture",
+									"value": "Edit Manufacture",
+									"type": "text"
+								},
+								{
+									"key": "plate",
+									"value": "Edit Plate",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "69",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "Edit Category",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/danie/OneDrive/Desktop/customers.csv"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/cars/abc",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"cars",
+								"abc"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "44"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2c-OhXsJ7tzHDFpsJy5bXPqiPlpzoQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 18 May 2024 13:45:23 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"Id not valid!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Edit Car Id Not Found",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"var current_date = new Date();\r",
+							"pm.environment.set(\"current_date\", current_date);"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "model",
+							"value": "Edit Model",
+							"type": "text"
+						},
+						{
+							"key": "manufacture",
+							"value": "Edit Manufacture",
+							"type": "text"
+						},
+						{
+							"key": "plate",
+							"value": "Edit Plate",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "69",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "Edit Category",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/danie/OneDrive/Desktop/customers.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/cars/99999",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"cars",
+						"99999"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Edit Car Id Not Found",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "model",
+									"value": "Edit Model",
+									"type": "text"
+								},
+								{
+									"key": "manufacture",
+									"value": "Edit Manufacture",
+									"type": "text"
+								},
+								{
+									"key": "plate",
+									"value": "Edit Plate",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "69",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "Edit Category",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/danie/OneDrive/Desktop/customers.csv"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/cars/99999",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"cars",
+								"99999"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2e-xwbXOoJVVY7dNq2wP0SsMBrcMb8\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 18 May 2024 13:45:31 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Error\",\n    \"message\": \"Data not found!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Edit Car By Id (With Upload) Not Image File",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"var current_date = new Date();\r",
+							"pm.environment.set(\"current_date\", current_date);"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "model",
+							"value": "Edit Model",
+							"type": "text"
+						},
+						{
+							"key": "manufacture",
+							"value": "Edit Manufacture",
+							"type": "text"
+						},
+						{
+							"key": "plate",
+							"value": "Edit Plate",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "69",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "Edit Category",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/danie/OneDrive/Desktop/customers.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/cars/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"cars",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Edit Car By Id (With Upload) Not Image File",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "model",
+									"value": "Edit Model",
+									"type": "text"
+								},
+								{
+									"key": "manufacture",
+									"value": "Edit Manufacture",
+									"type": "text"
+								},
+								{
+									"key": "plate",
+									"value": "Edit Plate",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "69",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "Edit Category",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/danie/OneDrive/Desktop/customers.csv"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/cars/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"cars",
+								"1"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "54"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"36-tRowYI7sGUOXcDdlFG3xVaR4RkY\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 18 May 2024 13:45:38 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"File must be a picture!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Edit Car By Id (With Upload)",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"var current_date = new Date();\r",
+							"pm.environment.set(\"current_date\", current_date);"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "model",
+							"value": "Edit Model",
+							"type": "text"
+						},
+						{
+							"key": "manufacture",
+							"value": "Edit Manufacture",
+							"type": "text"
+						},
+						{
+							"key": "plate",
+							"value": "Edit Plate",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "69",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "Edit Category",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/danie/OneDrive/Desktop/414470407_755909363247167_5973227874154298308_n.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/cars/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"cars",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Edit Car By Id (With Upload)",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "model",
+									"value": "Edit Model",
+									"type": "text"
+								},
+								{
+									"key": "manufacture",
+									"value": "Edit Manufacture",
+									"type": "text"
+								},
+								{
+									"key": "plate",
+									"value": "Edit Plate",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "69",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "Edit Category",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/danie/OneDrive/Desktop/414470407_755909363247167_5973227874154298308_n.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/cars/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"cars",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "311"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"137-DSl6Zbz3Cs4WJNa33VHNj9dogIw\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 18 May 2024 13:45:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Success\",\n    \"message\": \"Data sucesfully updated\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"model\": \"Edit Model\",\n            \"manufacture\": \"Edit Manufacture\",\n            \"plate\": \"Edit Plate\",\n            \"image_url\": \"/uploads/dfW25BV69SHl_qE3.jpg\",\n            \"price\": 69,\n            \"category\": \"Edit Category\",\n            \"created_at\": \"2024-05-18T13:17:59.835Z\",\n            \"updated_at\": \"2024-05-18T13:45:46.453Z\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Car Not Valid Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/cars/abc",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"cars",
+						"abc"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Car Not Valid Id",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/cars/abc",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"cars",
+								"abc"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "44"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2c-OhXsJ7tzHDFpsJy5bXPqiPlpzoQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 18 May 2024 13:45:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"Id not valid!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Car Not Found Data",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/cars/99999",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"cars",
+						"99999"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Car Not Found Data",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/cars/99999",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"cars",
+								"99999"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2e-xwbXOoJVVY7dNq2wP0SsMBrcMb8\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 18 May 2024 13:46:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Error\",\n    \"message\": \"Data not found!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Car By Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/cars/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"cars",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Car By Id",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/cars/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"cars",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "56"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"38-Xv4o4XPmL6Ozwca9Lz54Zd/ffdM\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 18 May 2024 13:46:13 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Success\",\n    \"message\": \"Data sucesfully deleted\"\n}"
+				}
+			]
+		}
+	]
+}
