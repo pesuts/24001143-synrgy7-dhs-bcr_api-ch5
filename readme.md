@@ -12,23 +12,23 @@
 **Detail Dokumentasi API**
 https://documenter.getpostman.com/view/25932120/2sA3JT4eQG#4ae08e3d-8fed-4a0f-8073-0b6d35f92f9d
 
-
 # Ringkasan API
 
-| Nama                                | Deskripsi                                                                              | Metode | Status           |
-|-------------------------------------|----------------------------------------------------------------------------------------|--------|------------------|
-| Get Cars                            | Mengambil daftar mobil.                                                                 | GET    | 200 OK           |
-| Get Car By Id With Not Valid Id     | Mengedit data mobil berdasarkan ID, tetapi ID tidak valid   | GET    | 400 Bad Request           |
-| Get Car By Id With Not Found Data     | Mengedit data mobil berdasarkan ID, tetapi ID tidak ditemukan   | GET    | 404 Not Found           |
-| Add Car (With Upload)   | Menambahkan mobil baru. | POST   | 201 Created      |
-| AAdd Car (With Upload) Not Image File   | Menambahkan mobil baru. | POST   | 400 Bad Request      |
-| Edit Car Id Not Valid               | Mengedit data mobil berdasarkan ID, tetapi ID tidak valid.                               | PUT    | 400 Bad Request |
-| Edit Car Id Not Found               | Mengedit data mobil berdasarkan ID, tetapi data tidak ditemukan.                          | PUT    | 404 Not Found   |
-| Edit Car By Id (With Upload) Not Image File | Mengedit data mobil berdasarkan ID dengan mengunggah gambar, tetapi file yang diunggah bukan file gambar. | PUT    | 400 Bad Request |
-| Edit Car By Id (With Upload)        | Mengedit data mobil berdasarkan ID dengan mengunggah gambar.                             | PUT    | 200 OK           |
-| Delete Car Not Valid Id             | Menghapus data mobil berdasarkan ID, tetapi ID tidak valid.                               | DELETE | 400 Bad Request |
-| Delete Car Not Found Data           | Menghapus data mobil berdasarkan ID, tetapi data tidak ditemukan.                          | DELETE | 404 Not Found   |
-| Delete Car By Id                    | Menghapus data mobil berdasarkan ID.                                                     | DELETE | 200 OK           |
+| Nama                                | Deskripsi                                                                              | Endpoint                 | Metode | Status           |
+|-------------------------------------|----------------------------------------------------------------------------------------|--------------------------|--------|------------------|
+| Get Cars                            | Mengambil daftar mobil.                                                                 | localhost:8000/cars     | GET    | 200 OK           |
+| Get Car By Id With Not Valid Id     | Mengambil data mobil berdasarkan ID, tetapi ID tidak valid   | localhost:8000/cars/abc | GET    | 400 Bad Request           |
+| Get Car By Id With Not Found Data     | Mengambil data mobil berdasarkan ID, tetapi ID tidak ditemukan   | localhost:8000/cars/9099 | GET    | 404 Not Found           |
+| Get Car By Id     | Mengambil data mobil berdasarkan ID  | localhost:8000/cars/1 | GET    | 200 Ok |
+| Add Car (With Upload) Not Image File | Menambahkan mobil baru dengan mengungguh file gambar| localhost:8000/cars     | POST   | 201 Created      |
+| Add Car (With Upload) Not Image File  | Menambahkan mobil dengan mngunggah gambar, tetapi file yang diunggah bukan file gambar. baru. | localhost:8000/cars     | POST   | 400 Bad Request      | 
+| Edit Car Id Not Valid               | Mengedit data mobil berdasarkan ID, tetapi ID tidak valid.                               | localhost:8000/cars/abc | PUT    | 400 Bad Request |
+| Edit Car Id Not Found               | Mengedit data mobil berdasarkan ID, tetapi data tidak ditemukan.                          | localhost:8000/cars/99999 | PUT    | 404 Not Found   |
+| Edit Car By Id (With Upload) Not Image File | Mengedit data mobil berdasarkan ID dengan mengunggah gambar, tetapi file yang diunggah bukan file gambar. | localhost:8000/cars/1 | PUT    | 400 Bad Request |
+| Edit Car By Id (With Upload)        | Mengedit data mobil berdasarkan ID dengan mengunggah gambar.                             | localhost:8000/cars/1 | PUT    | 200 OK           |
+| Delete Car Not Valid Id             | Menghapus data mobil berdasarkan ID, tetapi ID tidak valid.                               | localhost:8000/cars/abc | DELETE | 400 Bad Request |
+| Delete Car Not Found Data           | Menghapus data mobil berdasarkan ID, tetapi data tidak ditemukan.                          | localhost:8000/cars/99999 | DELETE | 404 Not Found   |
+| Delete Car By Id                    | Menghapus data mobil berdasarkan ID.                                                     | localhost:8000/cars/1 | DELETE | 200 OK           |
 
 <hr>
 
