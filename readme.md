@@ -60,49 +60,49 @@ Tidak diperlukan parameter tambahan.
     "status": "Success",
     "data": [
         {
-            "id": 10,
-            "model": "Edit Model",
-            "manufacture": "Edit Manufacture",
-            "plate": "Edit Plate",
-            "image_url": "/uploads/TNnFg0NRXFCbS7WG.jpg",
-            "price": 69,
-            "category": "Edit Category",
-            "created_at": "2024-05-03T13:17:59.835Z",
-            "updated_at": "2024-05-18T13:33:57.184Z",
+            "id": 3,
+            "model": "Ford Mustang",
+            "manufacture": "Ford",
+            "plate": "GHI789",
+            "image_url": "https://example.com/ford_mustang.jpg",
+            "price": 40000,
+            "category": "Sports Car",
+            "created_at": "2024-05-18T13:17:59.835Z",
+            "updated_at": "2024-05-18T13:17:59.835Z",
             "orders": [
-                {
-                    "id": 4,
-                    "customer_id": 2,
-                    "car_id": 10,
-                    "price": 35000,
-                    "created_at": "2024-04-23T13:17:59.848Z",
-                    "start_rent": "2024-04-28T13:17:59.848Z",
-                    "finish_rent": "2024-06-07T13:17:59.848Z"
-                }
+              {
+                "id": 2,
+                "customer_id": 6,
+                "car_id": 3,
+                "price": 25000,
+                "created_at": "2024-05-03T13:17:59.848Z",
+                "start_rent": "2024-05-08T13:17:59.848Z",
+                "finish_rent": "2024-05-28T13:17:59.848Z"
+              }
             ]
-        },
-       {
-          "id": 1,
-          "model": "Edit Model",
-          "manufacture": "Edit Manufacture",
-          "plate": "Edit Plate",
-          "image_url": "/uploads/mlegqiVJ3BspdvhI.jpg",
-          "price": 69,
-          "category": "Edit Category",
-          "created_at": "2024-05-18T13:17:59.835Z",
-          "updated_at": "2024-05-18T13:36:30.774Z",
-          "orders": [
-            {
-              "id": 3,
-              "customer_id": 3,
-              "car_id": 1,
-              "price": 28000,
-              "created_at": "2024-04-28T13:17:59.848Z",
-              "start_rent": "2024-05-03T13:17:59.848Z",
-              "finish_rent": "2024-06-02T13:17:59.848Z"
-            }
-          ]
-        },
+          },
+          {
+            "id": 4,
+            "model": "Nissan Altima",
+            "manufacture": "Nissan",
+            "plate": "JKL012",
+            "image_url": "https://example.com/nissan_altima.jpg",
+            "price": 28000,
+            "category": "Sedan",
+            "created_at": "2024-05-18T13:17:59.835Z",
+            "updated_at": "2024-05-18T13:17:59.835Z",
+            "orders": [
+              {
+                "id": 5,
+                "customer_id": 5,
+                "car_id": 4,
+                "price": 40000,
+                "created_at": "2024-04-18T13:17:59.848Z",
+                "start_rent": "2024-04-23T13:17:59.848Z",
+                "finish_rent": "2024-06-12T13:17:59.848Z"
+              }
+            ]
+          },
         ...
     ]
 }
@@ -197,26 +197,26 @@ Tidak diperlukan parameter tambahan.
     "data": [
         {
             "id": 1,
-            "model": "Edit Model",
-            "manufacture": "Edit Manufacture",
-            "plate": "Edit Plate",
-            "image_url": "/uploads/mlegqiVJ3BspdvhI.jpg",
-            "price": 69,
-            "category": "Edit Category",
+            "model": "Ford Mustang",
+            "manufacture": "Ford",
+            "plate": "GHI789",
+            "image_url": "https://example.com/ford_mustang.jpg",
+            "price": 40000,
+            "category": "Sports Car",
             "created_at": "2024-05-18T13:17:59.835Z",
-            "updated_at": "2024-05-18T13:36:30.774Z",
+            "updated_at": "2024-05-18T13:17:59.835Z",
             "orders": [
-                {
-                    "id": 3,
-                    "customer_id": 3,
-                    "car_id": 1,
-                    "price": 28000,
-                    "created_at": "2024-04-28T13:17:59.848Z",
-                    "start_rent": "2024-05-03T13:17:59.848Z",
-                    "finish_rent": "2024-06-02T13:17:59.848Z"
-                }
+              {
+                "id": 2,
+                "customer_id": 6,
+                "car_id": 3,
+                "price": 25000,
+                "created_at": "2024-05-03T13:17:59.848Z",
+                "start_rent": "2024-05-08T13:17:59.848Z",
+                "finish_rent": "2024-05-28T13:17:59.848Z"
+              }
             ]
-        }
+          },
     ]
 }
 ```
