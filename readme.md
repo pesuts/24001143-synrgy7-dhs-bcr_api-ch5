@@ -1,9 +1,13 @@
+# ERD
+![ERD](https://raw.githubusercontent.com/pesuts/24001143-synrgy7-dhs-bcr_api-ch5/main/challenge5_erd.jpg)
+
+---
+
 # Ringkasan API
 
 **Detail Dokumentasi API**
 https://documenter.getpostman.com/view/25932120/2sA3JT4eQG#4ae08e3d-8fed-4a0f-8073-0b6d35f92f9d
 
----
 
 ## Edit Car Id Not Valid
 - **Deskripsi**: Mengedit data mobil berdasarkan ID, tetapi ID tidak valid.
