@@ -1,3 +1,47 @@
+# Ringkasan API
+
+**Detail Dokumentasi API**
+https://documenter.getpostman.com/view/25932120/2sA3JT4eQG#4ae08e3d-8fed-4a0f-8073-0b6d35f92f9d
+
+---
+
+## Edit Car Id Not Valid
+- **Deskripsi**: Mengedit data mobil berdasarkan ID, tetapi ID tidak valid.
+- **Metode**: PUT
+- **Status**: 400 Bad Request
+
+## Edit Car Id Not Found
+- **Deskripsi**: Mengedit data mobil berdasarkan ID, tetapi data tidak ditemukan.
+- **Metode**: PUT
+- **Status**: 404 Not Found
+
+## Edit Car By Id (With Upload) Not Image File
+- **Deskripsi**: Mengedit data mobil berdasarkan ID dengan mengunggah gambar, tetapi file yang diunggah bukan file gambar.
+- **Metode**: PUT
+- **Status**: 400 Bad Request
+
+## Edit Car By Id (With Upload)
+- **Deskripsi**: Mengedit data mobil berdasarkan ID dengan mengunggah gambar.
+- **Metode**: PUT
+- **Status**: 200 OK
+
+## Delete Car Not Valid Id
+- **Deskripsi**: Menghapus data mobil berdasarkan ID, tetapi ID tidak valid.
+- **Metode**: DELETE
+- **Status**: 400 Bad Request
+
+## Delete Car Not Found Data
+- **Deskripsi**: Menghapus data mobil berdasarkan ID, tetapi data tidak ditemukan.
+- **Metode**: DELETE
+- **Status**: 404 Not Found
+
+## Delete Car By Id
+- **Deskripsi**: Menghapus data mobil berdasarkan ID.
+- **Metode**: DELETE
+- **Status**: 200 OK
+
+<hr>
+
 # Get Cars
 
 **Deskripsi**: Mengambil daftar mobil dari server.
