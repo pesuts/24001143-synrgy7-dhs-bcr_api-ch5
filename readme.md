@@ -1,4 +1,5 @@
-# SYNRGY7 - CHALLENGE 5 - DANIEL HASIANDO SINAGA
+# CHALLENGE 5 - SYNRGY7 - FSW1 - 
+**DANIEL HASIANDO SINAGA**
 
 ---
 
@@ -9,30 +10,31 @@
 
 # Ringkasan API
 
-**Detail Dokumentasi API**
+**Detail Dokumentasi API**  
 https://documenter.getpostman.com/view/25932120/2sA3JT4eQG#4ae08e3d-8fed-4a0f-8073-0b6d35f92f9d
 
 # Ringkasan API
 
-| Nama                                | Deskripsi                                                                              | Endpoint                 | Metode | Status           |
+| Nama | Deskripsi | Endpoint | Metode | Status |
 |-------------------------------------|----------------------------------------------------------------------------------------|--------------------------|--------|------------------|
-| Get Cars                            | Mengambil daftar mobil.                                                                 | localhost:8000/cars     | GET    | 200 OK           |
-| Get Car By Id With Not Valid Id     | Mengambil data mobil berdasarkan ID, tetapi ID tidak valid   | localhost:8000/cars/abc | GET    | 400 Bad Request           |
-| Get Car By Id With Not Found Data     | Mengambil data mobil berdasarkan ID, tetapi ID tidak ditemukan   | localhost:8000/cars/9099 | GET    | 404 Not Found           |
+| Get Cars (From Server) | Mengambil daftar mobil (dari Server) | localhost:8000/cars | GET    | 200 OK           |
+| Get Cars (From Cache) | Mengambil daftar mobil (dari Server) | localhost:8000/cars | GET    | 200 OK           |
+| Get Car By Id With Not Valid Id | Mengambil data mobil berdasarkan ID, tetapi ID tidak valid   | localhost:8000/cars/abc | GET    | 400 Bad Request |
+| Get Car By Id With Not Found Data     | Mengambil data mobil berdasarkan ID, tetapi ID tidak ditemukan   | localhost:8000/cars/99999 | GET    | 404 Not Found           |
 | Get Car By Id     | Mengambil data mobil berdasarkan ID  | localhost:8000/cars/1 | GET    | 200 Ok |
 | Add Car (With Upload) Not Image File | Menambahkan mobil baru dengan mengungguh file gambar| localhost:8000/cars     | POST   | 201 Created      |
 | Add Car (With Upload) Not Image File  | Menambahkan mobil dengan mngunggah gambar, tetapi file yang diunggah bukan file gambar. baru. | localhost:8000/cars     | POST   | 400 Bad Request      | 
-| Edit Car Id Not Valid               | Mengedit data mobil berdasarkan ID, tetapi ID tidak valid.                               | localhost:8000/cars/abc | PUT    | 400 Bad Request |
-| Edit Car Id Not Found               | Mengedit data mobil berdasarkan ID, tetapi data tidak ditemukan.                          | localhost:8000/cars/99999 | PUT    | 404 Not Found   |
+| Edit Car Id Not Valid | Mengedit data mobil berdasarkan ID, tetapi ID tidak valid. | localhost:8000/cars/abc | PUT    | 400 Bad Request |
+| Edit Car Id Not Found | Mengedit data mobil berdasarkan ID, tetapi data tidak ditemukan. | localhost:8000/cars/99999 | PUT    | 404 Not Found   |
 | Edit Car By Id (With Upload) Not Image File | Mengedit data mobil berdasarkan ID dengan mengunggah gambar, tetapi file yang diunggah bukan file gambar. | localhost:8000/cars/1 | PUT    | 400 Bad Request |
-| Edit Car By Id (With Upload)        | Mengedit data mobil berdasarkan ID dengan mengunggah gambar.                             | localhost:8000/cars/1 | PUT    | 200 OK           |
-| Delete Car Not Valid Id             | Menghapus data mobil berdasarkan ID, tetapi ID tidak valid.                               | localhost:8000/cars/abc | DELETE | 400 Bad Request |
-| Delete Car Not Found Data           | Menghapus data mobil berdasarkan ID, tetapi data tidak ditemukan.                          | localhost:8000/cars/99999 | DELETE | 404 Not Found   |
-| Delete Car By Id                    | Menghapus data mobil berdasarkan ID.                                                     | localhost:8000/cars/1 | DELETE | 200 OK           |
+| Edit Car By Id (With Upload)        | Mengedit data mobil berdasarkan ID dengan mengunggah gambar. | localhost:8000/cars/1 | PUT | 200 OK |
+| Delete Car Not Valid Id             | Menghapus data mobil berdasarkan ID, tetapi ID tidak valid. | localhost:8000/cars/abc | DELETE | 400 Bad Request |
+| Delete Car Not Found Data           | Menghapus data mobil berdasarkan ID, tetapi data tidak ditemukan. | localhost:8000/cars/99999 | DELETE | 404 Not Found   |
+| Delete Car By Id | Menghapus data mobil berdasarkan ID. | localhost:8000/cars/1 | DELETE | 200 OK |
 
 <hr>
 
-# Get Cars
+# Get Cars (From Server)
 
 **Deskripsi**: Mengambil daftar mobil dari server.
 
@@ -58,6 +60,83 @@ Tidak diperlukan parameter tambahan.
 ```json
 {
     "status": "Success",
+    "message": "Success from Server",
+    "data": [
+        {
+            "id": 3,
+            "model": "Ford Mustang",
+            "manufacture": "Ford",
+            "plate": "GHI789",
+            "image_url": "https://example.com/ford_mustang.jpg",
+            "price": 40000,
+            "category": "Sports Car",
+            "created_at": "2024-05-18T13:17:59.835Z",
+            "updated_at": "2024-05-18T13:17:59.835Z",
+            "orders": [
+              {
+                "id": 2,
+                "customer_id": 6,
+                "car_id": 3,
+                "price": 25000,
+                "created_at": "2024-05-03T13:17:59.848Z",
+                "start_rent": "2024-05-08T13:17:59.848Z",
+                "finish_rent": "2024-05-28T13:17:59.848Z"
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "model": "Nissan Altima",
+            "manufacture": "Nissan",
+            "plate": "JKL012",
+            "image_url": "https://example.com/nissan_altima.jpg",
+            "price": 28000,
+            "category": "Sedan",
+            "created_at": "2024-05-18T13:17:59.835Z",
+            "updated_at": "2024-05-18T13:17:59.835Z",
+            "orders": [
+              {
+                "id": 5,
+                "customer_id": 5,
+                "car_id": 4,
+                "price": 40000,
+                "created_at": "2024-04-18T13:17:59.848Z",
+                "start_rent": "2024-04-23T13:17:59.848Z",
+                "finish_rent": "2024-06-12T13:17:59.848Z"
+              }
+            ]
+          },
+        ...
+    ]
+}
+```
+# Get Cars (From Cache)
+
+**Deskripsi**: Mengambil daftar mobil dari cache.
+
+**Metode**: GET
+
+**Endpoint**: `localhost:8000/cars`
+
+### Permintaan
+Tidak diperlukan parameter tambahan.
+
+### Tanggapan
+- **Status**: 200 OK
+- **Headers**:
+  - `X-Powered-By: Express`
+  - `Content-Type: application/json; charset=utf-8`
+  - `Content-Length: 4015`
+  - `ETag: W/"faf-px0zChdr0t7GVr9QPVSDOm+FUtc"`
+  - `Date: Sat, 18 May 2024 13:43:47 GMT`
+  - `Connection: keep-alive`
+  - `Keep-Alive: timeout=5`
+
+#### Body
+```json
+{
+    "status": "Success",
+    "message": "Success from Cache",
     "data": [
         {
             "id": 3,
