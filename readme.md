@@ -13,40 +13,22 @@
 https://documenter.getpostman.com/view/25932120/2sA3JT4eQG#4ae08e3d-8fed-4a0f-8073-0b6d35f92f9d
 
 
-## Edit Car Id Not Valid
-- **Deskripsi**: Mengedit data mobil berdasarkan ID, tetapi ID tidak valid.
-- **Metode**: PUT
-- **Status**: 400 Bad Request
+# Ringkasan API
 
-## Edit Car Id Not Found
-- **Deskripsi**: Mengedit data mobil berdasarkan ID, tetapi data tidak ditemukan.
-- **Metode**: PUT
-- **Status**: 404 Not Found
-
-## Edit Car By Id (With Upload) Not Image File
-- **Deskripsi**: Mengedit data mobil berdasarkan ID dengan mengunggah gambar, tetapi file yang diunggah bukan file gambar.
-- **Metode**: PUT
-- **Status**: 400 Bad Request
-
-## Edit Car By Id (With Upload)
-- **Deskripsi**: Mengedit data mobil berdasarkan ID dengan mengunggah gambar.
-- **Metode**: PUT
-- **Status**: 200 OK
-
-## Delete Car Not Valid Id
-- **Deskripsi**: Menghapus data mobil berdasarkan ID, tetapi ID tidak valid.
-- **Metode**: DELETE
-- **Status**: 400 Bad Request
-
-## Delete Car Not Found Data
-- **Deskripsi**: Menghapus data mobil berdasarkan ID, tetapi data tidak ditemukan.
-- **Metode**: DELETE
-- **Status**: 404 Not Found
-
-## Delete Car By Id
-- **Deskripsi**: Menghapus data mobil berdasarkan ID.
-- **Metode**: DELETE
-- **Status**: 200 OK
+| Nama                                | Deskripsi                                                                              | Metode | Status           |
+|-------------------------------------|----------------------------------------------------------------------------------------|--------|------------------|
+| Get Cars                            | Mengambil daftar mobil.                                                                 | GET    | 200 OK           |
+| Get Car By Id With Not Valid Id     | Mengedit data mobil berdasarkan ID, tetapi ID tidak valid   | GET    | 400 Bad Request           |
+| Get Car By Id With Not Found Data     | Mengedit data mobil berdasarkan ID, tetapi ID tidak ditemukan   | GET    | 404 Not Found           |
+| Add Car (With Upload)   | Menambahkan mobil baru. | POST   | 201 Created      |
+| AAdd Car (With Upload) Not Image File   | Menambahkan mobil baru. | POST   | 400 Bad Request      |
+| Edit Car Id Not Valid               | Mengedit data mobil berdasarkan ID, tetapi ID tidak valid.                               | PUT    | 400 Bad Request |
+| Edit Car Id Not Found               | Mengedit data mobil berdasarkan ID, tetapi data tidak ditemukan.                          | PUT    | 404 Not Found   |
+| Edit Car By Id (With Upload) Not Image File | Mengedit data mobil berdasarkan ID dengan mengunggah gambar, tetapi file yang diunggah bukan file gambar. | PUT    | 400 Bad Request |
+| Edit Car By Id (With Upload)        | Mengedit data mobil berdasarkan ID dengan mengunggah gambar.                             | PUT    | 200 OK           |
+| Delete Car Not Valid Id             | Menghapus data mobil berdasarkan ID, tetapi ID tidak valid.                               | DELETE | 400 Bad Request |
+| Delete Car Not Found Data           | Menghapus data mobil berdasarkan ID, tetapi data tidak ditemukan.                          | DELETE | 404 Not Found   |
+| Delete Car By Id                    | Menghapus data mobil berdasarkan ID.                                                     | DELETE | 200 OK           |
 
 <hr>
 
